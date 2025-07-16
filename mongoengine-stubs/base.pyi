@@ -37,6 +37,7 @@ class BaseDocument:
         only_fields: Optional[List[str]] = ...,
         created: bool = ...,
     ) -> U: ...
+    def __getitem__(self, name) -> Any: ...
 
 class BaseField:
     def __new__(
